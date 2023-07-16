@@ -18,18 +18,55 @@
     ></script>
     <title>About me</title>
     <style>
-      @media (max-width: 576px) {
+      @media (min-width: 576px) {
         .myStory {
-          font-size: 16px;
+          font-size: 15px;
           text-align: center;
           margin: 10px 20px;
         }
         .email-link {
-          font-size: 22px;
+          font-size: 13px;
         }
         #contact {
           margin: 10px 20px;
           margin-bottom: 20px;
+        }
+        @media (max-width: 400px) {
+          body {
+            width: 360px;
+          }
+          .navbar {
+            width: 450px;
+          }
+          .myStory {
+            font-size: 15px;
+            text-align: center;
+            margin: 20px 10px !important;
+          }
+          h1 {
+            font-size: 30px;
+            text-align: center;
+          }
+          h3 {
+            font-size: 20px;
+          }
+
+          img {
+            max-width: 80px;
+          }
+          .navbar-brand {
+            font-size: 25px;
+            margin-left: 30px;
+          }
+          .navbar-toggler {
+            margin-right: 55px;
+          }
+          navbar-nav {
+            margin-left: 12 0px;
+          }
+          .email-link {
+            font-size: 10px !important;
+          }
         }
       }
     </style>
@@ -83,14 +120,23 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-4 text-center">
-          <img src="images/yoga.png" class="img-fluid" alt="yoga" />
+        <div class="col-md-4 text-center">
+          <img
+            src="images/Weather-app.png"
+            class="img-fluid"
+            alt="weather-app"
+          />
         </div>
-        <div class="col-sm-4 text-center">
-          <img src="images/weather.png" class="img-fluid" alt="weather" />
+
+        <div class="col-md-4 text-center">
+          <img
+            src="images/Site-project.png"
+            class="img-fluid"
+            alt="Site-project"
+          />
         </div>
-        <div class="col-sm-4 text-center">
-          <img src="images/yogurt.png" class="img-fluid" alt="yogurt" />
+        <div class="col-md-4 text-center">
+          <img src="images/CV-project1.png" class="img-fluid" alt="CV-page" />
         </div>
       </div>
     </div>
