@@ -1,6 +1,7 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
+  --image-background: #9d98f7;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -11,12 +12,29 @@ body {
 .introduction,
 .myDescription {
   text-align: center !important;
+
   margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 15px;
 }
+
+.introduction h1 {
+  color: var(--primary-color);
+}
+.myDescription h3 {
+  color: var(--primary-color);
+}
+
 .myStory {
   text-align: center;
+
+  font-weight: bolder;
+}
+
+.myDescription h2,
+.projectList {
+  text-decoration: underline;
+  margin-bottom: 40px;
 }
 
 h1,
@@ -28,15 +46,20 @@ h3 {
 
 h1 {
   font-size: 96px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h2 {
   font-size: 48px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+  opacity: 0.9;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 p {
@@ -45,6 +68,8 @@ p {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .navigation-links {
@@ -60,6 +85,21 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
+}
+.about-link,
+.contact-link {
+  border: 1px solid #6c63ff;
+}
+
+.navigation-links .about-link:hover {
+  background-color: var(--secondary-color);
+}
+.navigation-links .contact-link:hover {
+  background-color: #6b63ffbd;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: var(--primary-color);
 }
 
 .contact-link {
@@ -103,6 +143,7 @@ p {
 
 .aboutProject {
   background-color: none !important;
+  font-size: 15px;
 }
 
 .col-sm-6 {
@@ -133,6 +174,10 @@ p {
   margin-top: 0;
 }
 
+.buttons :hover {
+  background-color: var(--image-background);
+}
+
 .topLink {
   text-align: center;
   margin: 0 auto;
@@ -142,4 +187,12 @@ p {
 .col-md-4 {
   margin: 0 auto;
   padding: 10px 15px;
+}
+
+img {
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 400px;
+  background-color: var(--image-background);
+  box-shadow: 3px 5px #d6d6f19c;
 }
